@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hayder portfolio</title>
+
+    <!-- link to connecting to the style.css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link for font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c69ecf1aa6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- this imported style is for downloading the font-family: Saira Extra Condensed -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap");
+  </style>
+
+  <body>
+    <div>
+      <div class="entire-page-grid">
+        <div class="side-navbar">
+          <div class="side-nav__center-grid">
+            <a href="#">photo</a>
+            <a href="#">about</a>
+            <a href="#">experience</a>
+            <a href="#">education</a>
+            <a href="#">skills</a>
+            <a href="#">projects</a>
+            <a href="#">certifications</a>
+          </div>
+        </div>
+
+        <div class="horizontal-navbar">
+          <div class="nav-horizontal__center-flex">
+            <div class="nav-horizontal__left-content">
+              <a href="#" class="active">Hayder Abdulsahib</a>
+            </div>
+
+            <div class="nav-horizontal__bars-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+
+            <div class="nav-horizontal__drop-down-content hide">
+              <a href="#">about</a>
+              <a href="#">experience</a>
+              <a href="#">education</a>
+              <a href="#">skills</a>
+              <a href="#">projects</a>
+              <a href="#">certifications</a>
+            </div>
+          </div>
+          <div class="push-down"></div>
+        </div>
+
+        <div class="right-content">
+          <div class="right-conten__container-center">
+            <div class="right-conten__about">
+              <!-- there is an important reason for this empty div because when wrapping it above all the wanted content and giving it parent a display of grid with center option it will center the content but without this empty div this grid center will not work and it has to be only one div and if there is two the code will not work  -->
+              <div>
+                <h1>about</h1>
+
+                <h1 class="right-conten__about-name">
+                  Hayder
+                  <span class="right-conten__about-family-name"
+                    >abdulsahib</span
+                  >
+                </h1>
+
+                <h2 class="right-conten__about-address">
+                  Jordan.Amman.00962798452429.<span
+                    class="right-conten__about-email"
+                    >abdulsahib.hayder@gmail.com</span
+                  >
+                </h2>
+
+                <p>
+                  I am experienced in leveraging agile frameworks to provide a
+                  robust synopsis for high level overviews. Iterative approaches
+                  to corporate strategy foster collaborative thinking to further
+                  the overall value proposition.
+                </p>
+              </div>
+            </div>
+
+            <div class="right-conten__experience">
+              <h1>experience</h1>
+            </div>
+
+            <div class="right-conten__education">
+              <h1>education</h1>
+            </div>
+
+            <div class="right-conten__skills">
+              <h1>skills</h1>
+            </div>
+
+            <div class="right-conten__projects">
+              <h1>projects</h1>
+            </div>
+
+            <div class="right-conten__certifications">
+              <h1>certifications</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- we must always put our script tag for the connection to the js page at the
+    end before the body tag -->
+    <script src="main.js"></script>
+  </body>
+</html>

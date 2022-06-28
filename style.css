@@ -1,0 +1,195 @@
+:root {
+  --primary-blue: #074176;
+  --primary-gray-dark: #343a40;
+  --primary-gray-light: #868e96;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Saira Extra Condensed", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-gray-dark);
+}
+
+p {
+  font-family: "Saira Extra Condensed", serif;
+  font-weight: 400;
+  color: var(--primary-gray-light);
+  font-size: 22px;
+}
+
+.entire-page-grid {
+  border: 1px solid yellow;
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.side-navbar {
+  border: 1px solid blue;
+  background-color: red;
+  /* background-color: var(--primary-blue); */
+}
+
+.side-nav__center-grid {
+  position: fixed;
+  top: 25%;
+  left: 80px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: repeat(7, 35px);
+}
+
+.horizontal-navbar {
+  display: none;
+}
+
+.right-conten__container-center {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid blue;
+}
+
+.right-conten__about {
+  height: 100vh;
+  border-bottom: 1px solid #dee2e6;
+
+  /* the reason that i added this is to center the content inside the div */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-conten__about-name {
+  font-size: 6rem;
+  line-height: 5.5rem;
+  margin: 0px;
+}
+
+.right-conten__about-family-name {
+  color: var(--primary-blue);
+}
+
+.right-conten__about-address {
+  text-transform: uppercase;
+  font-weight: 500;
+  /* font-family: "Saira Extra Condensed", serif; */
+  font-size: 1.35rem;
+  color: var(--primary-gray-light);
+  margin: 0px;
+}
+
+.right-conten__about-email {
+  text-transform: none;
+  color: var(--primary-blue);
+}
+
+.right-conten__experience {
+  height: 100vh;
+  /* border: 1px solid green; */
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+.right-conten__education {
+  height: 100vh;
+  /* border: 1px solid green; */
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+.right-conten__skills {
+  height: 100vh;
+  /* border: 1px solid green; */
+}
+
+.right-conten__projects {
+  height: 100vh;
+  border: 1px solid green;
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+.right-conten__certifications {
+  height: 100vh;
+  border: 1px solid green;
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media all and (max-width: 800px) {
+  .entire-page-grid {
+    display: block;
+  }
+
+  .horizontal-navbar {
+    display: block;
+  }
+
+  .side-navbar {
+    display: none;
+  }
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* this is for the horizontal navbar and we put it inside the media query because it will only appear in the mobile mode */
+
+  .nav-horizontal__center-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0063d1;
+    position: fixed; /* this is to make it fixed on the top of the screen */
+    top: 0;
+    width: 100%;
+  }
+
+  .horizontal-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .horizontal-navbar .active {
+    background-color: #0d1117;
+  }
+
+  .nav-horizontal__bars-icon {
+    /* padding-right: 20px; */
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .nav-horizontal__drop-down-content {
+    position: fixed;
+    width: 100%;
+    top: 28px; /* this is the space between the links on drop-down on the mobile mode and the main navbar */
+    background-color: #434e59;
+  }
+
+  .nav-horizontal__drop-down-content a {
+    display: block;
+    text-align: left;
+    padding: 16px 0; /* this is to put a space for the drop-down from top and bottom for the links in mobile mode */
+  }
+
+  .nav-horizontal__drop-down-content a:hover:not(.active) {
+    background-color: #023369;
+  }
+
+  .push-down {
+    margin-bottom: 50px;
+  }
+}
