@@ -69,6 +69,8 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 
+  margin-bottom: 50px;
+
   border: 1px solid blue;
 }
 
@@ -147,11 +149,15 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 
+  margin-top: 50px;
+  margin-bottom: 50px;
+
   border: 1px solid blue;
 }
 
 .right-conten__experience-title {
   font-size: 3.5rem;
+  margin-top: 0px;
 }
 
 .right-conten__job-flex {
@@ -170,16 +176,12 @@ p {
   margin: 0px 0px;
 }
 
-.right-conten__working-interval-flex {
-  align-self: flex-start;
-}
-
 .right-conten__working-interval {
   display: flex;
   justify-content: flex-end;
   margin: 0px 0px;
 
-  width: 250px;
+  min-width: 250px;
   font-size: 1.35rem;
   color: var(--primary-blue);
 }
