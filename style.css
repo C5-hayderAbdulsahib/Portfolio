@@ -154,22 +154,93 @@ p {
   font-size: 3.5rem;
 }
 
-.right-conten__job-heading-flex {
+.right-conten__job-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.right-conten__job-title {
+  font-size: 1.75rem;
+  margin: 0px 0px;
+}
+
+.right-conten__company-name {
+  font-size: 1.35rem;
+  color: var(--primary-gray-light);
+  margin: 0px 0px;
+}
+
+.right-conten__working-interval-flex {
+  align-self: flex-start;
+}
+
+.right-conten__working-interval {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 0px;
+
+  width: 250px;
+  font-size: 1.35rem;
+  color: var(--primary-blue);
 }
 
 .right-conten__education {
-  height: 100vh;
-  /* border: 1px solid green; */
+  border-bottom: 1px solid red;
+  /* border-bottom: 1px solid #dee2e6; */
+}
 
-  border-bottom: 1px solid #dee2e6;
+.right-conten__education-grid {
+  /* the reason that i added this is to center the content inside the div from top and bottom also not just to center from right and left */
+  display: grid;
+  align-items: center;
+  /* we can not add justify-content inside the grid or it will override the justify-content of the flex inside it */
+
+  /* i have to give it a hight or it will not work and i have to give it a hight of 100vh but if there is too many content then the centring will not work, also the centering will be affected by the size of the device since i give it a height of vh so if there is a lot of content and the we are in a mobile device the center will not work because we are in a mobile device and the 100vh for it is different from the 100vh of the desktop*/
+  min-height: 100vh;
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  border: 1px solid blue;
+}
+
+.right-conten__education-title {
+  font-size: 3.5rem;
 }
 
 .right-conten__skills {
   height: 100vh;
   /* border: 1px solid green; */
+}
+
+.right-conten__education-degree-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-conten__education-university-name {
+  font-size: 1.75rem;
+  color: var(--primary-gray-dark);
+  margin: 0px 0px;
+}
+
+.right-conten__education-degree-type {
+  font-size: 1.35rem;
+  color: var(--primary-gray-light);
+  margin: 0px 0px;
+}
+
+.right-conten__education-GPA {
+  font-size: 1.35rem;
+  color: var(--primary-gray-light);
+  /* margin: 0px 0px; */
+}
+
+.right-conten__education-year-graduation {
+  align-self: flex-start;
+
+  font-size: 1.25rem;
+  color: var(--primary-blue);
 }
 
 .right-conten__projects {
@@ -252,5 +323,21 @@ p {
 
   .push-down {
     margin-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .right-conten__job-flex {
+    flex-direction: column;
+  }
+
+  .right-conten__working-interval {
+    display: block;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .right-conten__education-degree-flex {
+    flex-direction: column;
   }
 }
