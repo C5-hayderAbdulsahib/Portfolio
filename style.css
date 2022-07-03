@@ -1,6 +1,7 @@
 :root {
   --primary-blue: #074176;
   --primary-gray-dark: #343a40;
+  --secondary-gray-dark: #495057;
   --primary-gray-light: #868e96;
 }
 
@@ -52,20 +53,23 @@ p {
   display: none;
 }
 
-.right-conten__container-center {
-  margin-left: 5%;
-  margin-right: 5%;
-  border: 1px solid blue;
+.right-conten__about {
+  border-bottom: 1px solid red;
 }
 
-.right-conten__about {
-  height: 100vh;
-  border-bottom: 1px solid #dee2e6;
-
-  /* the reason that i added this is to center the content inside the div */
+.right-conten__about-grid {
+  /* the reason that i added this is to center the content inside the div from top and bottom also not just to center from right and left */
   display: grid;
   justify-content: center;
   align-items: center;
+
+  /* i have to give it a hight or it will not work and i have to give it a hight of 100vh but if there is too many content then the centring will not work, also the centering will be affected by the size of the device since i give it a height of vh so if there is a lot of content and the we are in a mobile device the center will not work because we are in a mobile device and the 100vh for it is different from the 100vh of the desktop*/
+  min-height: 100vh;
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  border: 1px solid blue;
 }
 
 .right-conten__about-name {
@@ -92,11 +96,68 @@ p {
   color: var(--primary-blue);
 }
 
-.right-conten__experience {
-  height: 100vh;
-  /* border: 1px solid green; */
+.right-conten__about-summary {
+  margin: 40px 0px;
+}
 
-  border-bottom: 1px solid #dee2e6;
+.right-conten__about-frameworks-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.fa-github {
+  font-size: 1.75rem;
+  padding: 12px;
+  background-color: var(--secondary-gray-dark);
+  border-radius: 50%;
+}
+
+.fa-github:hover {
+  background-color: rgb(22, 27, 34);
+}
+
+.fa-linkedin-in {
+  padding: 12px;
+  background-color: var(--secondary-gray-dark);
+  border-radius: 50%;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.fa-linkedin-in:hover {
+  background-color: rgb(10, 102, 194);
+}
+
+.right-conten__experience {
+  /* border-bottom: 1px solid #dee2e6; */
+  border-bottom: 1px solid red;
+}
+
+.right-conten__experience-grid {
+  /* the reason that i added this is to center the content inside the div from top and bottom also not just to center from right and left */
+  display: grid;
+  align-items: center;
+  /* we can not add justify-content inside the grid or it will override the justify-content of the flex inside it */
+
+  /* i have to give it a hight or it will not work and i have to give it a hight of 100vh but if there is too many content then the centring will not work, also the centering will be affected by the size of the device since i give it a height of vh so if there is a lot of content and the we are in a mobile device the center will not work because we are in a mobile device and the 100vh for it is different from the 100vh of the desktop*/
+  min-height: 100vh;
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  border: 1px solid blue;
+}
+
+.right-conten__experience-title {
+  font-size: 3.5rem;
+}
+
+.right-conten__job-heading-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .right-conten__education {
@@ -125,7 +186,7 @@ p {
   border-bottom: 1px solid #dee2e6;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .entire-page-grid {
     display: block;
   }

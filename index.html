@@ -26,10 +26,10 @@
       <div class="entire-page-grid">
         <div class="side-navbar">
           <div class="side-nav__center-grid">
-            <a href="#">photo</a>
-            <a href="#">about</a>
-            <a href="#">experience</a>
-            <a href="#">education</a>
+            <a href="#about">photo</a>
+            <a href="#about">about</a>
+            <a href="#experience">experience</a>
+            <a href="#education">education</a>
             <a href="#">skills</a>
             <a href="#">projects</a>
             <a href="#">certifications</a>
@@ -59,54 +59,99 @@
         </div>
 
         <div class="right-content">
-          <div class="right-conten__container-center">
-            <div class="right-conten__about">
+          <div class="right-conten__about" id="about">
+            <div class="right-conten__about-grid">
               <!-- there is an important reason for this empty div because when wrapping it above all the wanted content and giving it parent a display of grid with center option it will center the content but without this empty div this grid center will not work and it has to be only one div and if there is two the code will not work  -->
               <div>
-                <h1>about</h1>
-
                 <h1 class="right-conten__about-name">
                   Hayder
-                  <span class="right-conten__about-family-name"
-                    >abdulsahib</span
-                  >
+                  <span class="right-conten__about-family-name">
+                    abdulsahib
+                  </span>
                 </h1>
 
                 <h2 class="right-conten__about-address">
-                  Jordan.Amman.00962798452429.<span
-                    class="right-conten__about-email"
-                    >abdulsahib.hayder@gmail.com</span
-                  >
+                  Jordan.Amman.00962798452429.
+                  <span class="right-conten__about-email">
+                    abdulsahib.hayder@gmail.com
+                  </span>
                 </h2>
 
-                <p>
-                  I am experienced in leveraging agile frameworks to provide a
-                  robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further
-                  the overall value proposition.
+                <p class="right-conten__about-summary">
+                  I am passionate about development and want to be more
+                  professional in my field, with an eagerness to learn new
+                  technologies. I also seek challenging assignments and
+                  responsibilities, with an opportunity for growth and career
+                  advancement as successful achievements.
                 </p>
+
+                <div class="right-conten__about-frameworks">
+                  <div class="right-conten__about-frameworks-flex">
+                    <a
+                      style="color: white"
+                      href="https://github.com/hayderAbdulsahib"
+                      target="socail media"
+                      title="github account"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/hayder-abdul-sahib-bbab92229/"
+                      target="socail media"
+                      title="linkedin account"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="right-conten__experience">
-              <h1>experience</h1>
-            </div>
+          <div class="right-conten__experience" id="experience">
+            <div class="right-conten__experience-grid">
+              <!-- there is an important reason for this empty div because when wrapping it above all the wanted content and giving it parent a display of grid with center option it will center the content but without this empty div this grid center will not work and it has to be only one div and if there is two the code will not work  -->
+              <div>
+                <h2 class="right-conten__experience-title">experience</h2>
+                <div>
+                  <div class="right-conten__job-heading-flex">
+                    <div>
+                      <h3 class="right-conten__job-title">
+                        Warehouse Distribution & Data Entry
+                      </h3>
 
-            <div class="right-conten__education">
-              <h1>education</h1>
-            </div>
+                      <h3 class="right-conten__company-name">
+                        Al Qastal For Producing Juice & Carbonated Soft Drinks
+                        Co.
+                      </h3>
+                    </div>
 
-            <div class="right-conten__skills">
-              <h1>skills</h1>
+                    <div>
+                      <h3 class="right-conten__working-interval">
+                        June 2019 - March 2020
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="right-conten__projects">
-              <h1>projects</h1>
-            </div>
+          <div class="right-conten__education">
+            <h1>education</h1>
+          </div>
 
-            <div class="right-conten__certifications">
-              <h1>certifications</h1>
-            </div>
+          <div class="right-conten__skills">
+            <h1>skills</h1>
+          </div>
+
+          <div class="right-conten__projects">
+            <h1>projects</h1>
+          </div>
+
+          <div class="right-conten__certifications">
+            <h1>certifications</h1>
           </div>
         </div>
       </div>
